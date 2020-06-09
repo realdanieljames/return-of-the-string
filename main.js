@@ -45,18 +45,16 @@ function yellLouder(expression) {
 }
 
 // function getInitials(name) {
-//   return name.split(" ")
-//   .map((word) => {
-//     return word[0] + '.';
-//   })
-//   .join('');
-// } 
+  function getInitials(name) {
+    const firstInitial = name[0];
+    const spaceIndex = name.indexOf(' ');
+    const secondInitial = name[spaceIndex + 1]
 
-function getInitials(name) {
-  return name[0];
+    return firstInitial + '.' + secondInitial + '.';
+}
 
-const initials = getInitials('figure me')
-initials;
+const result10 =  getInitials('Daniel James fire');
+result10;
 
 
 
