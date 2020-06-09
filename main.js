@@ -46,11 +46,13 @@ function yellLouder(expression) {
 
 // function getInitials(name) {
   function getInitials(name) {
-    const firstInitial = name[0];
-    const spaceIndex = name.indexOf(' ');
-    const secondInitial = name[spaceIndex + 1]
+    // const firstInitial = name[0];
+    // const spaceIndex = name.indexOf(' ');
+    // const secondInitial = name[spaceIndex + 1]
 
-    return firstInitial + '.' + secondInitial + '.';
+    // return firstInitial + '.' + secondInitial + '.';
+
+    return name[0] + '.' + name[name.indexOf(' ') + 1] + '.';
 }
 
 const result10 =  getInitials('Daniel James fire');
